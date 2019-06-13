@@ -10,7 +10,21 @@ import java.sql.Statement;
  * @author rconklin
  */
 public class DatabaseUtil {
-	public static void initDB() {
+	private static DatabaseUtil me;
+
+	public static synchronized DatabaseUtil getInstance() {
+		if (me == null) {
+			me = new DatabaseUtil();
+		}
+
+		return me;
+	}
+
+	private DatabaseUtil( ) {
+		initDB();
+	}
+
+	private void initDB() {
 		try {
 			Connection cn = getConnection();
 			Statement stmt = cn.createStatement();
@@ -24,8 +38,9 @@ public class DatabaseUtil {
 		}
 		
 	}
-	public static Connection getConnection() throws SQLException, ClassNotFoundException {
+
+	public Connection getConnection() throws SQLException, ClassNotFoundException {
 		Class.forName("org.hsqldb.jdbcDriver");
-		return DriverManager.getConnection("jdbc:hsqldb:mem", "sa", "");
+		return DriverManager.getConnection("jdbc:hsqldb:mem:phonebook", "sa", "");
 	}
 }
