@@ -1,6 +1,7 @@
 package com.proquest.interview.phonebook;
 
 import org.junit.Test;
+import org.junit.Assert;
 
 public class PhoneBookImplTest {
 	@Test
@@ -10,13 +11,7 @@ public class PhoneBookImplTest {
 		Person myPerson = new Person( "Mary Smith", "(248) 555-1212", "10 Smith Lane, Smithville, 48105" );
 		myBook.addPerson(myPerson);
 
-		try {
-			myBook.findPerson("Mary", "Smith");
-			System.out.println( "We created and found our person, exciting!" );
-		} catch( Exception e0 ) {
-			e0.printStackTrace();
-		}
-
+		myBook.findPerson("Mary", "Smith");
 	}
 
 }
