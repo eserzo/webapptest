@@ -1,22 +1,37 @@
 Interview "work simulation"
 ==========
 
-This exercise is designed to tell us something about your capabilities as a Java developer.
-The ultimate goal of it is spelled out in the main method of src/com/proquest/interview/phonebook/PhoneBookImpl.
-You will also need to know how to write a few very simple SQL queries.
+This repository contains an implemented solution of the "work simulation" project.  There are several 
+questions that could have been asked upfront such as :
 
-The code is entirely self-contained: you should be able to load it up in Eclipse or another IDE 
-and begin working immediately, without needing any other tools or libraries.
+<UL>
+<LI>What JDK would you like to use?
+<LI>Do you want a build file created?  If so, what is your tool of choice (maven/gradle/ant/shell scripts..no judging!)
+<LI>What is the intention of (x) -- I'll save that for our discussion
+</UL>
 
-Implement the TODO comments to the best of your ability.  In addition, you should be looking 
-at how to improve this program.  The DatabaseUtil class does not need to be changed, 
-although you may do so if it seems like an improvement, as long as you do not destroy its functionality.
 
-You can download this project, make your changes, and zip or tar it up and send it back to us.
-Or if you want to impress us, fork it, put your changes in, and send along the url of your branch.
+If you truly are excited by the project - you can listen to me as I write the code.  When possible, I do try to use
+design pattern (GoF) but in the spirit of the project, not going to go overboard.  It's important to write maintanable
+code, and using patterns is a great way to do this.  It also helps less experienced or developers new to the codebase 
+come up to speed quicker (and facilitates discussions between developers).
 
-This exercise typically takes less than an hour, unless you choose to do significant refactoring.
-There are many possible approaches, and no single "right answer".  But do be prepared to discuss 
-the changes that you made.
+https://www.youtube.com/watch?v=T9E_FkzHTOs&feature=youtu.be
 
-Thank you!
+To summarize - balance.  Ask questions, get done what we are asked, do it in a timeframe that enables us
+to iterate on our solution (if possible).  Make the customer happy.
+
+
+Thank you for the opportunity
+-Ed
+
+
+Side Note:
+I wrote in my email that I did try to commit the branch -- You did say to fork it :)
+
+## Build/Run Instructions
+No new libraries have been introduced, if you were using Eclipse the .project and .classpath
+files are included
+
+We can discuss other options 
+
